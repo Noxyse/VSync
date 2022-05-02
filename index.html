@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<header>
+    <h1>
+        Shadow et la synchronisation verticale (V-Sync / G-Sync / Freesync)
+    </h1>
+</header>
+
+<body>
+    <section id="main">
+        <h2>
+            La V-Sync, qu'est-ce que c'est ?
+        </h2>
+        <p>
+            La V-Sync, <strong><em>Vertical Sync</em></strong> ou
+            <strong>synchronisation verticale</strong><em>,</em> est une option graphique
+            permettant de fluidifier l'image et d'éviter les principes de "tearing" (déchirement
+            de l'image, à gauche) et de "stuttering" (saccades, à droite).
+        </p>
+        <br>
+        <img src="tearing.avif" alt="exemple de tearing">
+        <img src="stuttering.avif" alt="exemple de stuttering">
+        <p>
+            Plus exactement, la synchronisation verticale permet de brider le nombre d'images par seconde (FPS) pour que
+            la
+            carte graphique et l'écran soient synchronisés sur le rendu et l'affichage de l'image.
+        </p>
+        <p>
+            Une désyncrhonisation peut arriver lorsque le GPU fournit plus d'images que le moniteur ne peut afficher.
+        </p>
+        <p>
+            Un écran est limité par son <strong>taux de rafraîchissement</strong>. Si ce taux est égal à 60Hz, l'écran
+            en
+            question ne pourra afficher que 60 images par seconde.
+        </p>
+        <br>
+        <h2>G-Sync et Freesync, quelle différence ?</h2>
+        <p>
+            Le G-Sync et Freesync sont les solutions respectives de Nvidia et AMD à la synchronisation verticale.
+        </p>
+        <br>
+        <h2>
+            Doit-on activer la V-Sync sur Shadow ?
+        </h2>
+        <p>
+            La réponse courte est <strong>non</strong>.
+        </p>
+        <p>
+            En effet, Shadow possède la spécificité d'intégrer <strong>une solution anti-tearing directement dans son
+                architecture</strong>.
+        </p>
+        <p>
+            L'activer serait donc redondant et n'améliorerait pas pour autant la qualité de votre image. Au contraire,
+            cela
+            pourrait entraîner une perte de performances dans la mesure où des ressources seraient utilisées
+            inutilement.
+        </p>
+        <p>
+            En revanche, si vous remarquez que vous avez malgré tout des soucis de tearing et de stuttering, n'hésitez
+            pas à vous référer à notre article dédié à la <a
+                href="https://support.shadow.tech/hc/fr/articles/360016101259">configuration et l'optimisation du
+                réseau</a>.
+        </p>
+    </section>
+</body>
+<br>
+<footer>
+    <p>----------</p>
+    <p>Vous avez encore des questions après la lecture de cet article ? <a
+            href="https://support.shadow.tech/hc/fr/articles/4407181736594" target="_self">Contactez-nous</a> afin
+        d'obtenir de l'assistance !
+</footer>
